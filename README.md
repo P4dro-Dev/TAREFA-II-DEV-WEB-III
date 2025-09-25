@@ -1,5 +1,5 @@
  ## Projeto API Django
-# Sobre o Projeto
+## Sobre o Projeto
 Este é um projeto simples de API desenvolvido com o framework Django para demonstrar a criação e organização de código web. Ele implementa um único endpoint que aceita uma requisição POST e retorna uma saudação personalizada em formato JSON.
  
  # O projeto foi construído seguindo os padrões de software MVT (Model-View-Template) e FrontController para garantir uma estrutura organizada e escalável.
