@@ -2,11 +2,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Ajuste ROOT_URLCONF e WSGI_APPLICATION para o package correto
 ROOT_URLCONF = 'studytasks_project_pacote_project.urls'
 WSGI_APPLICATION = 'studytasks_project_pacote_project.wsgi.application'
 
-# Templates — apontar para a pasta templates na raiz do workspace
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -23,7 +21,6 @@ TEMPLATES = [
     },
 ]
 
-# INSTALLED_APPS — verifique o nome exato do diretório do app (case-sensitive)
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -31,9 +28,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # ajuste abaixo para o nome do diretório do seu app:
-    # se sua pasta do app for "sistema" use 'sistema'
-    # se for "Sistema" use 'Sistema'
     'sistema',
 ]
 
