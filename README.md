@@ -1,8 +1,9 @@
 # 💻📊 StudyTasks — Sistema Web de Gestão de Tarefas de Estudo  
 
 ### 📚 Projeto de Desenvolvimento Web III  
-**Autor:** Pedro Henrique  
-**Curso:** Técnico em Informática para Internet  
+**Discente:** Pedro Henrique  
+""Docente"" Dr. Nécio 
+**Curso** Técnico em Informática para Internet  
 
 ---
 
