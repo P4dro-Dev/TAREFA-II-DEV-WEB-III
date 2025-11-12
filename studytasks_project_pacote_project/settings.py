@@ -1,6 +1,12 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# CHAVE e flags de desenvolvimento (troque em produção)
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'troque_essa_chave_em_producao')
+DEBUG = True
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 ROOT_URLCONF = 'studytasks_project_pacote_project.urls'
 WSGI_APPLICATION = 'studytasks_project_pacote_project.wsgi.application'
@@ -54,4 +60,5 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
