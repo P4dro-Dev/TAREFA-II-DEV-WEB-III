@@ -2,36 +2,15 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-chave-segura-troque-se-quiser'
-DEBUG = True
-ALLOWED_HOSTS = []
+# Ajuste ROOT_URLCONF e WSGI_APPLICATION para o package correto
+ROOT_URLCONF = 'studytasks_project_pacote_project.urls'
+WSGI_APPLICATION = 'studytasks_project_pacote_project.wsgi.application'
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'sistema',
-]
-
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
-
-ROOT_URLCONF = 'studytasks_project.urls'
-
+# Templates — apontar para a pasta templates na raiz do workspace
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'sistema' / 'templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -44,7 +23,29 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'studytasks_project.wsgi.application'
+# INSTALLED_APPS — verifique o nome exato do diretório do app (case-sensitive)
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    # ajuste abaixo para o nome do diretório do seu app:
+    # se sua pasta do app for "sistema" use 'sistema'
+    # se for "Sistema" use 'Sistema'
+    'sistema',
+]
+
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
 
 DATABASES = {
     'default': {
