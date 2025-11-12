@@ -114,4 +114,82 @@ Tarefa.objects.create(
     descricao="Revisar o padrão MVT e criar templates.",
     concluida=False
 )
+```
+Rotas do Sistema
 
+```
+URL	Página	Descrição
+/	index.html	Página inicial com as tarefas
+/problema/	problema.html	Descrição do problema enfrentado
+/solucao/	solucao.html	Explicação da solução proposta
+/autor/	autor.html	Informações sobre o autor
+```
+
+🧰 Como Executar o Projeto
+```
+1️⃣ Clonar o repositório
+git clone https://github.com/P4dro-Dev/TAREFA-II-DEV-WEB-III.git
+cd TAREFA-II-DEV-WEB-III/studytasks_project
+
+2️⃣ Criar o ambiente virtual
+python -m venv venv
+venv\Scripts\activate  # Windows
+# ou
+source venv/bin/activate  # Linux/Mac
+
+3️⃣ Instalar dependências
+pip install -r requirements.txt
+
+4️⃣ Criar o banco de dados
+python manage.py makemigrations
+python manage.py migrate
+
+5️⃣ (Opcional) Inserir tarefa de exemplo
+python manage.py shell
+
+from sistema.models import Tarefa
+Tarefa.objects.create(
+    titulo="Estudar Python - Capítulo 1",
+    descricao="Praticar listas e dicionários",
+    concluida=False
+)
+exit()
+
+6️⃣ Executar o servidor
+python manage.py runserver
+```
+
+Acesse no navegador:
+
+👉 http://127.0.0.1:8000/
+
+🧩 Estrutura dos Padrões Implementados
+
+Padrão	Arquivo	Responsabilidade
+```
+Front Controller	studytasks_project/urls.py	Centraliza o roteamento de requisições
+Model (M)	sistema/models.py	Estrutura e manipula os dados
+View (V)	sistema/views.py	Processa as requisições e controla o fluxo
+Template (T)	sistema/templates/sistema/	Renderiza as páginas para o usuário
+```
+
+🧪 Testes
+
+O projeto inclui um arquivo tests.py com base para futuros testes de integração e validação de modelos e views.
+
+👨‍💻 Autor
+
+Pedro Henrique
+🎓 Estudante do curso Técnico em Informática para Internet
+💼 Desenvolvedor iniciante com interesse em Web, IA e automação
+📍 IFCE — Instituto Federal do Ceará
+
+📧 E-mail acadêmico: henrique.pedro62@aluno.ifce.edu.br
+
+🔗 Repositório do Projeto
+
+🏆 Créditos e Licença
+
+Projeto desenvolvido para fins educacionais, como atividade prática da disciplina Desenvolvimento Web III.
+
+🔓 Licença livre para uso acadêmico e estudos.
