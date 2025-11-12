@@ -16,3 +16,33 @@ O projeto foi desenvolvido aplicando os **padrões de software Front Controller 
 
 ## 🧩 Estrutura do Projeto  
 
+```
+studytasks_project/
+├── manage.py
+├── db.sqlite3
+├── requirements.txt
+├── README.md
+├── studytasks_project/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+└── sistema/
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── models.py
+    ├── views.py
+    ├── urls.py
+    ├── migrations/
+    │   ├── __init__.py
+    │   └── 0001_initial.py
+    ├── templates/
+    │   └── sistema/
+    │       ├── index.html
+    │       ├── problema.html
+    │       ├── solucao.html
+    │       └── autor.html
+    └── tests.py
+```
