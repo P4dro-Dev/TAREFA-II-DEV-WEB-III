@@ -54,7 +54,7 @@ studytasks_project/
 
 ---
 
-## 🧠 Problema Identificado  
+## ⚛️ Problema Identificado  
 
 Muitos estudantes enfrentam dificuldades para **gerenciar suas tarefas e estudos**, o que pode resultar em atrasos e baixa produtividade.  
 Faltava uma ferramenta simples e acessível para **organizar, visualizar e acompanhar** o progresso das atividades acadêmicas.  
@@ -180,13 +180,6 @@ Template (T)	sistema/templates/sistema/	Renderiza as páginas para o usuário
 🧪 Testes
 
 O projeto inclui um arquivo tests.py com base para futuros testes de integração e validação de modelos e views.
-
-👨‍💻 Autor
-
-Pedro Henrique
-🎓 Estudante do curso Técnico em Informática para Internet
-💼 Desenvolvedor iniciante com interesse em Web, IA e automação
-📍 IFCE — Instituto Federal do Ceará
 
 📧 E-mail acadêmico: henrique.pedro62@aluno.ifce.edu.br
 
