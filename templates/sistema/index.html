@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>StudyTasks - Página Inicial</title>
+</head>
+<body>
+    <h1>Bem-vindo ao StudyTasks!</h1>
+    <p>Gerencie suas tarefas de estudo de forma simples e eficiente.</p>
+
+    <h2>Minhas Tarefas</h2>
+    <ul>
+        {% for tarefa in tarefas %}
+        <li>
+            {{ tarefa.titulo }} - 
+            {% if tarefa.concluida %} ✅ Concluída {% else %} ⏳ Pendente {% endif %}
+        </li>
+        {% empty %}
+        <p>Nenhuma tarefa cadastrada.</p>
+        {% endfor %}
+    </ul>
+
+    <nav>
+        <a href="{% url 'problema' %}">Problema</a> |
+        <a href="{% url 'solucao' %}">Solução</a> |
+        <a href="{% url 'autor' %}">Autor</a>
+    </nav>
+</body>
+</html>
