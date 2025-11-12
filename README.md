@@ -2,8 +2,8 @@
 
 ### 📚 Projeto de Desenvolvimento Web III  
 **Discente:** Pedro Henrique  
-**Docente** Dr. Nécio Veras
-**Curso** Técnico em Informática para Internet  
+**Docente**: Dr. Nécio Veras
+**Curso**: Técnico em Informática para Internet  
 
 ---
 
