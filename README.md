@@ -1,7 +1,7 @@
 
-## 📚 StudyTasks — Sistema Web de Gestão de Tarefas de Estudo
+## 📚| StudyTasks — Sistema Web de Gestão de Tarefas de Estudo
 
-## 📝 Descrição Geral
+## 📝| Descrição Geral
 
 O StudyTasks é um sistema web desenvolvido em Django, projetado para auxiliar estudantes na gestão de suas tarefas de estudo.
 O sistema foi construído seguindo rigorosamente os padrões de software:
@@ -12,23 +12,26 @@ MVT (Model–View–Template)
 
 Ele permite que o usuário visualize tarefas, registre novas, marque como concluídas e entenda o problema e a solução apresentada dentro do contexto do projeto.
 
-## 🎯 Objetivo do Projeto
+## 🎯| Objetivo do Projeto
 
 A proposta da Tarefa II foi criar:
 
+```
 ✔ Uma aplicação Django organizada com padrões de software
 ✔ Estrutura completa de pastas com models, views e templates
 ✔ Documentação do problema, solução e autor
 ✔ Branch no GitHub chamada organizacao
 ✔ Commits e merge
 ✔ Relatório em PDF contendo prints e explicações
+```
 
 Este repositório contém toda a implementação do sistema StudyTasks, totalmente funcional e organizada.
 
-## 🧩 Problema Identificado
+## 🧩| Problema Identificado
 
 Muitos estudantes têm dificuldades em organizar suas tarefas diárias, o que provoca:
 
+```
 Acúmulo de atividades
 
 Esquecimento de prazos
@@ -36,11 +39,13 @@ Esquecimento de prazos
 Baixa produtividade e falta de controle dos estudos
 
 Não havia uma ferramenta simples, prática e acessível para ajudar no acompanhamento dessas tarefas.
+```
 
-## 💡 Solução Proposta
+## 💡| Solução Proposta
 
 O StudyTasks foi criado como uma solução acessível, leve e intuitiva, permitindo:
 
+```
 Registro de tarefas de estudo
 
 Marcação de tarefas como concluídas
@@ -52,10 +57,11 @@ Visualização de tarefas pendentes
 Documentação clara do problema, solução e autor
 
 O sistema funciona diretamente no navegador, sem necessidade de instalação complexa.
+```
 
-## 🧭 Padrões de Software Aplicados
+## 🧭| Padrões de Software Aplicados
 
-## 🔸 📌 Front Controller
+## 🔸 📌| Front Controller
 ```
 
 Todas as requisições são encaminhadas por um único ponto de entrada:
@@ -90,6 +96,7 @@ Exibe as páginas HTML renderizadas dinamicamente.
 
 ```
 studytasks_project/
+│──
 │── manage.py
 │── db.sqlite3
 │── requirements.txt
