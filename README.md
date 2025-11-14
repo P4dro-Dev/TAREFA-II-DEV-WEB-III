@@ -96,7 +96,7 @@ Exibe as páginas HTML renderizadas dinamicamente.
 
 ```
 studytasks_project/
-│──
+│──Relatório_PDF_DESCRIÇÃO+IMG+Print's
 │── manage.py
 │── db.sqlite3
 │── requirements.txt
