@@ -199,7 +199,7 @@ sistema/tests.py
 
 Que pode ser expandido futuramente com testes de modelo, requisição e validação.
 
-🔧 Controle de Versão (Git/GitHub)
+🔧 Controle de Versão (Git)
 
 Requisitos cumpridos:
 
