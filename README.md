@@ -120,7 +120,7 @@ studytasks_project/
     │       └── autor.html
 ```
 
-## 📄 Modelagem do Sistema
+## 📄| Modelagem do Sistema
 
 ```
 🗃 Modelo: Tarefa
@@ -142,7 +142,7 @@ URL	Template	Função
 /autor/	autor.html	Exibe nome e minicurrículo do autor
 ```
 
-⚙️ Tecnologias Utilizadas
+⚙️| Tecnologias Utilizadas
 
 ```
 Tecnologia	Função
@@ -154,7 +154,7 @@ Git / GitHub	Controle de versão
 
 ```
 
-🛠 Como Executar o Projeto Localmente
+🛠| Como Executar o Projeto Localmente
 
 ```
 1️⃣ Clonar o repositório
@@ -193,7 +193,9 @@ Acesse no navegador:
 
 O projeto possui um arquivo básico:
 
+```
 sistema/tests.py
+```
 
 Que pode ser expandido futuramente com testes de modelo, requisição e validação.
 
