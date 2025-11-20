@@ -1,7 +1,7 @@
 
 ## 📚| StudyTasks — Sistema Web de Gestão de Tarefas de Estudo
 
-## 📝| Descrição Geral
+## 📝| Descrição Geral 
 
 O StudyTasks é um sistema web desenvolvido em Django, projetado para auxiliar estudantes na gestão de suas tarefas de estudo.
 O sistema foi construído seguindo rigorosamente os padrões de software:
